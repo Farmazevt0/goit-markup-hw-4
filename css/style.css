@@ -105,16 +105,26 @@ p {
 
 }
 
+.header-studio {
+    color: #404bbf;
+}
+
 .menu-list {
     display: flex;
         gap: 40px;
 }
 
-
+.header-menu-link {
+    padding: 24px 0;
+        position: relative;
+        color: #2e2f42;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .header-menu-link:hover,
 :focus {
     color: #404bbf;
+    
 }
 
 .header-menu-link {
@@ -166,7 +176,15 @@ p {
     padding-top: 188px;
         padding-bottom: 188px;
         text-align: center;
-
+        background-image: linear-gradient(
+         rgba(46, 47, 66, 0.7),
+         rgba(46, 47, 66, 0.7)
+        ),
+         url("../images/people-office.jpg");
+         background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
 }
 
 .flex-center {
@@ -257,16 +275,22 @@ p {
 padding: 120px 0;
 }
 
-
-
-
-
 .about-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
     }
     
+    .about-cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 112px;
+            background-color: #f4f4fd;
+            border-radius: 4px;
+            border: 1px solid #8e8f99;
+            margin-bottom: 8px;
+    }
 /* Team */
 
 
@@ -328,7 +352,38 @@ padding: 120px 0;
     color: #434455;
 }
 
+.media-container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 12px;
+    padding-top: 12px;
+}
 
+.media-item {
+display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.media-container-icon:hover, 
+.media-container-icon:focus {
+    background-color: #404bbf;;  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ .mediaicons{
+    fill: #fff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ 
 /* Portfolio */
 
 .portfolio {
@@ -429,4 +484,17 @@ width: calc((100% - 48px) / 3);
     color: #f4f4fd;
     max-width: 264px;
     
+}
+
+.footer-media {
+    padding-right: 120px;
+}
+
+.footer-media-list {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
+        margin-bottom: 16px;
 }
